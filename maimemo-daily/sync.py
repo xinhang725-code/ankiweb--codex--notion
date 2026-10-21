@@ -14,7 +14,7 @@ TITLE = '考研真题高频搭配'
 
 class ApiError(Exception):
     def __init__(self, code, path):
-        super().__init__(f'墨墨 API 错误：HTTP {code}，接口 {path}')
+        super().__init__(f'墨墨 API 错误：HTTP {code}，请求 {path}')
         self.code = code
 
 class Client:
@@ -48,7 +48,7 @@ class Client:
                 if (status == 429 or status >= 500) and attempt < 4:
                     time.sleep(min(2 ** (attempt + 1), 30))
                     continue
-                raise ApiError(status, path) from None
+                raise ApiError(status, method + ' ' + path) from None
             except URLError:
                 if attempt < 4:
                     time.sleep(2 ** (attempt + 1))
@@ -111,8 +111,8 @@ class Client:
                 raise RuntimeError('真题例句未返回 ID')
 
     def book(self):
-        for offset in range(0, 2000, 100):
-            rows = self.call('GET', '/notepads', {'limit': 100, 'offset': offset}).get('notepads', [])
+        for offset in range(0, 2000, 10):
+            rows = self.call('GET', '/notepads', {'limit': 10, 'offset': offset}).get('notepads', [])
             if not isinstance(rows, list): raise RuntimeError('词本列表格式异常')
             for row in rows:
                 if row.get('title') == TITLE and row.get('status') != 'DELETED' and row.get('type') == 'NOTEPAD':
@@ -120,7 +120,7 @@ class Client:
                     if not isinstance(doc, dict) or 'content' not in doc:
                         raise RuntimeError('词本详情格式异常')
                     return doc
-            if len(rows) < 100: break
+            if len(rows) < 10: break
         payload = {'notepad': {'title': TITLE, 'brief': '历年真题搭配，中文及来源请查看助记',
                                 'content': '# 考研真题搭配\n', 'tags': ['考研'],
                                 'status': 'PUBLISHED'}}
