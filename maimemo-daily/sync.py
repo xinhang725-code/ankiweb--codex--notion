@@ -41,6 +41,10 @@ class Client:
                     result = json.loads(content) if content.strip() else {}
                     if not isinstance(result, dict):
                         raise RuntimeError('API 数据格式异常')
+                    if result.get('success') is False:
+                        raise RuntimeError('墨墨 API 返回业务失败（' + method + ' ' + path + '）')
+                    if result.get('success') is True and isinstance(result.get('data'), dict):
+                        return result['data']
                     return result
             except HTTPError as err:
                 status = err.code
