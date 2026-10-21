@@ -11,6 +11,18 @@
       "2010t1-deemed-suitable-for",
       "2010t1-farther-removed-from",
       "2010t1-taken-for-granted"
+    ],
+    "2026-10-22": [
+      "2009pb-dominant-approach",
+      "2009pb-through-influence",
+      "2009pb-scientific-study",
+      "2009t3-global-leader",
+      "2009t3-necessary-not-sufficient",
+      "2009t4-decisive-moment",
+      "2009t1-on-auto-pilot",
+      "2009t1-same-context",
+      "2010t1-prospect-remote",
+      "2010cloze-compared-with"
     ]
   },
   "entries": {
@@ -63,6 +75,56 @@
       "day": "2026-10-21",
       "phrase": "taken for granted",
       "word": "taken for granted"
+    },
+    "2009pb-dominant-approach": {
+      "day": "2026-10-22",
+      "phrase": "a dominant approach to",
+      "word": "approach"
+    },
+    "2009pb-through-influence": {
+      "day": "2026-10-22",
+      "phrase": "largely through the influence of",
+      "word": "influence"
+    },
+    "2009pb-scientific-study": {
+      "day": "2026-10-22",
+      "phrase": "the scientific study of",
+      "word": "study"
+    },
+    "2009t3-global-leader": {
+      "day": "2026-10-22",
+      "phrase": "the global leader in",
+      "word": "leader"
+    },
+    "2009t3-necessary-not-sufficient": {
+      "day": "2026-10-22",
+      "phrase": "a necessary, but not a sufficient, condition",
+      "word": "condition"
+    },
+    "2009t4-decisive-moment": {
+      "day": "2026-10-22",
+      "phrase": "a decisive moment",
+      "word": "moment"
+    },
+    "2009t1-on-auto-pilot": {
+      "day": "2026-10-22",
+      "phrase": "on auto-pilot",
+      "word": "pilot"
+    },
+    "2009t1-same-context": {
+      "day": "2026-10-22",
+      "phrase": "in the same context as",
+      "word": "context"
+    },
+    "2010t1-prospect-remote": {
+      "day": "2026-10-22",
+      "phrase": "the prospect seems remote",
+      "word": "prospect"
+    },
+    "2010cloze-compared-with": {
+      "day": "2026-10-22",
+      "phrase": "compared with",
+      "word": "compared with"
     }
   },
   "phrases": {
@@ -75,6 +137,16 @@
     "marvel at the fact": "2010t1-marvel-at-the-fact",
     "deemed suitable for": "2010t1-deemed-suitable-for",
     "farther removed from": "2010t1-farther-removed-from",
-    "taken for granted": "2010t1-taken-for-granted"
+    "taken for granted": "2010t1-taken-for-granted",
+    "a dominant approach to": "2009pb-dominant-approach",
+    "largely through the influence of": "2009pb-through-influence",
+    "the scientific study of": "2009pb-scientific-study",
+    "the global leader in": "2009t3-global-leader",
+    "a necessary, but not a sufficient, condition": "2009t3-necessary-not-sufficient",
+    "a decisive moment": "2009t4-decisive-moment",
+    "on auto-pilot": "2009t1-on-auto-pilot",
+    "in the same context as": "2009t1-same-context",
+    "the prospect seems remote": "2010t1-prospect-remote",
+    "compared with": "2010cloze-compared-with"
   }
 }
