@@ -1,2 +1,92 @@
 [
+  {
+    "id": "2009pb-dominant-approach",
+    "phrase": "a dominant approach to",
+    "headword": "approach",
+    "meaning": "主导性的研究方法",
+    "quote": "a dominant approach to the study of culture",
+    "source": "2009 考研英语 阅读 Part B",
+    "tip": "dominant 不等于唯一；approach to 后接名词"
+  },
+  {
+    "id": "2009pb-through-influence",
+    "phrase": "largely through the influence of",
+    "headword": "influence",
+    "meaning": "主要通过……的影响",
+    "quote": "largely through the influence of many students of Boas",
+    "source": "2009 考研英语 阅读 Part B",
+    "tip": "largely 是主要地，不是完全"
+  },
+  {
+    "id": "2009pb-scientific-study",
+    "phrase": "the scientific study of",
+    "headword": "study",
+    "meaning": "对……的科学研究",
+    "quote": "the scientific study of human societies",
+    "source": "2009 考研英语 阅读 Part B",
+    "tip": "study 作名词，of 表研究对象"
+  },
+  {
+    "id": "2009t3-global-leader",
+    "phrase": "the global leader in",
+    "headword": "leader",
+    "meaning": "在……领域的全球领先者",
+    "quote": "the global leader in automotive- assembly productivity",
+    "source": "2009 考研英语 阅读 Text 3",
+    "tip": "in 后接领先领域，不是地点"
+  },
+  {
+    "id": "2009t3-necessary-not-sufficient",
+    "phrase": "a necessary, but not a sufficient, condition",
+    "headword": "condition",
+    "meaning": "必要但非充分条件",
+    "quote": "a necessary, but not a sufficient, condition",
+    "source": "2009 考研英语 阅读 Text 3",
+    "tip": "必要条件不等于充分条件"
+  },
+  {
+    "id": "2009t4-decisive-moment",
+    "phrase": "a decisive moment",
+    "headword": "moment",
+    "meaning": "决定性时刻",
+    "quote": "a decisive moment when he opened the Bible",
+    "source": "2009 考研英语 阅读 Text 4",
+    "tip": "decisive 表起决定作用，区别于 decisive decision"
+  },
+  {
+    "id": "2009t1-on-auto-pilot",
+    "phrase": "on auto-pilot",
+    "headword": "pilot",
+    "meaning": "不假思索地自动行事",
+    "quote": "setting our brains on auto-pilot",
+    "source": "2009 考研英语 阅读 Text 1",
+    "tip": "比喻习惯性行为，不是字面自动驾驶"
+  },
+  {
+    "id": "2009t1-same-context",
+    "phrase": "in the same context as",
+    "headword": "context",
+    "meaning": "在与……相同的语境下",
+    "quote": "in the same context as creativity and innovation",
+    "source": "2009 考研英语 阅读 Text 1",
+    "tip": "context 是语境，不是 content 内容"
+  },
+  {
+    "id": "2010t1-prospect-remote",
+    "phrase": "the prospect seems remote",
+    "headword": "prospect",
+    "meaning": "前景似乎渺茫",
+    "quote": "The prospect seems remote.",
+    "source": "2010 英语一 阅读 Text 1",
+    "tip": "remote 指可能性小，不是地理偏远"
+  },
+  {
+    "id": "2010cloze-compared-with",
+    "phrase": "compared with",
+    "headword": "compare",
+    "meaning": "与……相比",
+    "quote": "rose compared with the previous Saturday",
+    "source": "2010 英语一 完形",
+    "tip": "with 侧重对照，不宜机械排斥 compared to"
+  }
 ]
