@@ -9,6 +9,7 @@ on:
     paths:
       - 'maimemo-daily/data/queue.json'
       - 'maimemo-daily/data/seed.json'
+      - 'maimemo-daily/sync.py'
 
 permissions:
   contents: write
