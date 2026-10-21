@@ -1,5 +1,80 @@
 {
-  "days": {},
-  "entries": {},
-  "phrases": {}
+  "days": {
+    "2026-10-21": [
+      "2010t1-have-taken-place",
+      "2010t1-far-reaching",
+      "2010t1-inexorable-decline",
+      "2010t1-to-the-point-of-impossibility",
+      "2010t1-a-considerable-number-of",
+      "2010t1-in-large-part",
+      "2010t1-marvel-at-the-fact",
+      "2010t1-deemed-suitable-for",
+      "2010t1-farther-removed-from",
+      "2010t1-taken-for-granted"
+    ]
+  },
+  "entries": {
+    "2010t1-have-taken-place": {
+      "day": "2026-10-21",
+      "phrase": "have taken place",
+      "word": "place"
+    },
+    "2010t1-far-reaching": {
+      "day": "2026-10-21",
+      "phrase": "far-reaching",
+      "word": "far-reaching"
+    },
+    "2010t1-inexorable-decline": {
+      "day": "2026-10-21",
+      "phrase": "inexorable decline",
+      "word": "decline"
+    },
+    "2010t1-to-the-point-of-impossibility": {
+      "day": "2026-10-21",
+      "phrase": "to the point of impossibility",
+      "word": "point"
+    },
+    "2010t1-a-considerable-number-of": {
+      "day": "2026-10-21",
+      "phrase": "a considerable number of",
+      "word": "number"
+    },
+    "2010t1-in-large-part": {
+      "day": "2026-10-21",
+      "phrase": "in large part",
+      "word": "in large part"
+    },
+    "2010t1-marvel-at-the-fact": {
+      "day": "2026-10-21",
+      "phrase": "marvel at the fact",
+      "word": "marvel"
+    },
+    "2010t1-deemed-suitable-for": {
+      "day": "2026-10-21",
+      "phrase": "deemed suitable for",
+      "word": "deem"
+    },
+    "2010t1-farther-removed-from": {
+      "day": "2026-10-21",
+      "phrase": "farther removed from",
+      "word": "remove"
+    },
+    "2010t1-taken-for-granted": {
+      "day": "2026-10-21",
+      "phrase": "taken for granted",
+      "word": "taken for granted"
+    }
+  },
+  "phrases": {
+    "have taken place": "2010t1-have-taken-place",
+    "far-reaching": "2010t1-far-reaching",
+    "inexorable decline": "2010t1-inexorable-decline",
+    "to the point of impossibility": "2010t1-to-the-point-of-impossibility",
+    "a considerable number of": "2010t1-a-considerable-number-of",
+    "in large part": "2010t1-in-large-part",
+    "marvel at the fact": "2010t1-marvel-at-the-fact",
+    "deemed suitable for": "2010t1-deemed-suitable-for",
+    "farther removed from": "2010t1-farther-removed-from",
+    "taken for granted": "2010t1-taken-for-granted"
+  }
 }
