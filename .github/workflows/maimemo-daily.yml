@@ -1,0 +1,57 @@
+name: MaiMemo Daily Collocations
+
+on:
+  schedule:
+    # 23:30 UTC = 08:30 JST / 07:30 Beijing
+    - cron: '30 23 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'maimemo-daily/data/queue.json'
+      - 'maimemo-daily/data/seed.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: maimemo-daily
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Import 10 collocations
+        id: import
+        shell: bash
+        env:
+          MAIMEMO_TOKEN: ${{ secrets.MAIMEMO_TOKEN }}
+        run: |
+          set +e
+          python maimemo-daily/sync.py
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Persist successful import checkpoints
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add maimemo-daily/data/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: checkpoint MaiMemo collocations'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Assert 10 items synced
+        shell: bash
+        env:
+          CODE: ${{ steps.import.outputs.exit_code }}
+        run: test "$CODE" = '0'
