@@ -84,6 +84,32 @@ class Client:
             raise RuntimeError('新增助记没有返回 ID，暂不计入成功')
         return '新增'
 
+    def custom_details(self, voc_id, entry):
+        """词典缺少完整短语时，把自定义释义和真题例句挂到核心单词词条。"""
+        marker = '[考研搭配:' + entry['id'] + ']'
+        definition = marker + ' ' + entry['phrase'] + '：' + entry['meaning']
+        rows = self.call('GET', '/interpretations', {'voc_id': voc_id}).get('interpretations', [])
+        if not isinstance(rows, list):
+            raise RuntimeError('自定义释义列表格式异常')
+        if not any(marker in (x.get('interpretation') or '') and x.get('status') != 'DELETED'
+                   for x in rows if isinstance(x, dict)):
+            response = self.call('POST', '/interpretations', payload={'interpretation': {
+                'voc_id': voc_id, 'interpretation': definition,
+                'tags': ['考研', '简明'], 'status': 'PUBLISHED'}})
+            if not isinstance(response.get('interpretation'), dict) or not response['interpretation'].get('id'):
+                raise RuntimeError('自定义释义未返回 ID')
+        examples = self.call('GET', '/phrases', {'voc_id': voc_id}).get('phrases', [])
+        if not isinstance(examples, list):
+            raise RuntimeError('真题例句列表格式异常')
+        if not any(x.get('phrase') == entry['quote'] and x.get('origin') == entry['source']
+                   for x in examples if isinstance(x, dict)):
+            response = self.call('POST', '/phrases', payload={'phrase': {
+                'voc_id': voc_id, 'phrase': entry['quote'],
+                'interpretation': entry['meaning'], 'tags': ['考研', '短语'],
+                'origin': entry['source']}})
+            if not isinstance(response.get('phrase'), dict) or not response['phrase'].get('id'):
+                raise RuntimeError('真题例句未返回 ID')
+
     def book(self):
         for offset in range(0, 2000, 100):
             rows = self.call('GET', '/notepads', {'limit': 100, 'offset': offset}).get('notepads', [])
@@ -181,6 +207,8 @@ def main():
                 print('未找到核心词词条：' + x['id'])
                 continue
             result = api.note(voc_id, x)
+            if word.casefold() != x['phrase'].casefold():
+                api.custom_details(voc_id, x)
             processed.append(dict(x, _word=word))
             print('已核实并写入：' + x['phrase'] + '（' + result + '）')
         except ApiError as e:
