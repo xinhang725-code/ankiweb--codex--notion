@@ -23,6 +23,18 @@
       "2009t1-same-context",
       "2010t1-prospect-remote",
       "2010cloze-compared-with"
+    ],
+    "2026-10-23": [
+      "20261023-2010e2t2-keep-conversation-going",
+      "2010t1-in-detail-and-at-length",
+      "2010t1-could-be-trusted-to",
+      "2010t1-a-term-of-contempt",
+      "2010t1-virtually-forgotten",
+      "2010t1-known-solely-as",
+      "2010t1-so-widely-admired-that",
+      "2010t1-in-print",
+      "2010t1-save-to-specialists",
+      "2010t1-enjoy-a-revival"
     ]
   },
   "entries": {
@@ -125,6 +137,56 @@
       "day": "2026-10-22",
       "phrase": "compared with",
       "word": "compared with"
+    },
+    "20261023-2010e2t2-keep-conversation-going": {
+      "day": "2026-10-23",
+      "phrase": "keep the conversation going",
+      "word": "conversation"
+    },
+    "2010t1-in-detail-and-at-length": {
+      "day": "2026-10-23",
+      "phrase": "in detail and at length",
+      "word": "length"
+    },
+    "2010t1-could-be-trusted-to": {
+      "day": "2026-10-23",
+      "phrase": "could be trusted to",
+      "word": "trust"
+    },
+    "2010t1-a-term-of-contempt": {
+      "day": "2026-10-23",
+      "phrase": "a term of contempt",
+      "word": "contempt"
+    },
+    "2010t1-virtually-forgotten": {
+      "day": "2026-10-23",
+      "phrase": "virtually forgotten",
+      "word": "forget"
+    },
+    "2010t1-known-solely-as": {
+      "day": "2026-10-23",
+      "phrase": "known solely as",
+      "word": "solely"
+    },
+    "2010t1-so-widely-admired-that": {
+      "day": "2026-10-23",
+      "phrase": "so widely admired that",
+      "word": "admire"
+    },
+    "2010t1-in-print": {
+      "day": "2026-10-23",
+      "phrase": "in print",
+      "word": "in print"
+    },
+    "2010t1-save-to-specialists": {
+      "day": "2026-10-23",
+      "phrase": "save to specialists",
+      "word": "save"
+    },
+    "2010t1-enjoy-a-revival": {
+      "day": "2026-10-23",
+      "phrase": "enjoy a revival",
+      "word": "revival"
     }
   },
   "phrases": {
@@ -147,6 +209,16 @@
     "on auto-pilot": "2009t1-on-auto-pilot",
     "in the same context as": "2009t1-same-context",
     "the prospect seems remote": "2010t1-prospect-remote",
-    "compared with": "2010cloze-compared-with"
+    "compared with": "2010cloze-compared-with",
+    "keep the conversation going": "20261023-2010e2t2-keep-conversation-going",
+    "in detail and at length": "2010t1-in-detail-and-at-length",
+    "could be trusted to": "2010t1-could-be-trusted-to",
+    "a term of contempt": "2010t1-a-term-of-contempt",
+    "virtually forgotten": "2010t1-virtually-forgotten",
+    "known solely as": "2010t1-known-solely-as",
+    "so widely admired that": "2010t1-so-widely-admired-that",
+    "in print": "2010t1-in-print",
+    "save to specialists": "2010t1-save-to-specialists",
+    "enjoy a revival": "2010t1-enjoy-a-revival"
   }
 }
