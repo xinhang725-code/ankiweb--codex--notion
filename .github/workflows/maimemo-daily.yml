@@ -1,15 +1,8 @@
-name: MaiMemo Daily Collocations
+name: MaiMemo Daily Collocations (Manual Only)
 
+# Old daily automation disabled at user's request; manual runs only.
 on:
-  schedule:
-    # 23:30 UTC = 08:30 JST / 07:30 Beijing
-    - cron: '30 23 * * *'
   workflow_dispatch:
-  push:
-    paths:
-      - 'maimemo-daily/data/queue.json'
-      - 'maimemo-daily/data/seed.json'
-      - 'maimemo-daily/sync.py'
 
 permissions:
   contents: write
